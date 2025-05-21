@@ -1,0 +1,20 @@
+{
+  "questionsList": [
+    {
+      "question": "What is Bookmark?",
+      "answer": "Bookmark Answer 1 "
+    },
+    {
+      "question": "How cain I request a new browser?",
+      "answer": "Bookmark Answer 2 "
+    },
+    {
+      "question": "Is there a mobile app?",
+      "answer": "Bookmark Answer 3 "
+    },
+    {
+      "question": "What about other Chromium browsers?",
+      "answer": "Bookmark Answer 4"
+    }
+  ]
+}
