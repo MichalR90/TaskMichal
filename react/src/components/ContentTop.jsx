@@ -30,7 +30,7 @@ function ContentTop() {
         <div className="content-immages">
           <img
             onClick={handleShow}
-            src="../src/assets/illustration-hero.svg"
+            src="./src/assets/illustration-hero.svg"
             className="content-immage"
           ></img>
         </div>
@@ -53,7 +53,7 @@ function ContentTop() {
               </div>
               <div className="modal-body text-center">
                 <img
-                  src="../src/assets/illustration-hero.svg"
+                  src="./src/assets/illustration-hero.svg"
                   alt="preview"
                   style={{ maxWidth: "100%", height: "auto" }}
                 />

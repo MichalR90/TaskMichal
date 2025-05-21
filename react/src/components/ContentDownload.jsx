@@ -16,7 +16,7 @@ function ContentDownload() {
         <div className="content-download-part-download">
           <div className="chrome-section">
             <div className="browser-icon">
-              <img src="../src/assets/logo-chrome.svg" alt="Chrome img"></img>
+              <img src="./src/assets/logo-chrome.svg" alt="Chrome img"></img>
             </div>
             <div className="browser-title">
               <span>Add to Chrome</span>
@@ -25,7 +25,7 @@ function ContentDownload() {
               <span>Minimum version 62</span>
             </div>
             <div className="browser-bg-dots">
-              <img src="../src/assets/bg-dots.svg" alt="bg dots"></img>
+              <img src="./src/assets/bg-dots.svg" alt="bg dots"></img>
             </div>
             <div className="browser-button-install">
               <button>Add & install Extension</button>
@@ -34,7 +34,7 @@ function ContentDownload() {
 
           <div className="firefox-section">
             <div className="browser-icon">
-              <img src="../src/assets/logo-firefox.svg" alt="browser img"></img>
+              <img src="./src/assets/logo-firefox.svg" alt="browser img"></img>
             </div>
             <div className="browser-title">
               <span>Add to Chrome</span>
@@ -43,7 +43,7 @@ function ContentDownload() {
               <span>Minimum version 62</span>
             </div>
             <div className="browser-bg-dots">
-              <img src="../src/assets/bg-dots.svg" alt="bg dots"></img>
+              <img src="./src/assets/bg-dots.svg" alt="bg dots"></img>
             </div>
             <div className="browser-button-install">
               <button>Add & install Extension</button>
@@ -52,7 +52,7 @@ function ContentDownload() {
 
           <div className="opera-section">
             <div className="browser-icon">
-              <img src="../src/assets/logo-opera.svg" alt="Chrome img"></img>
+              <img src="./src/assets/logo-opera.svg" alt="Chrome img"></img>
             </div>
             <div className="browser-title">
               <span>Add to Chrome</span>
@@ -61,7 +61,7 @@ function ContentDownload() {
               <span>Minimum version 62</span>
             </div>
             <div className="browser-bg-dots">
-              <img src="../src/assets/bg-dots.svg" alt="bg dots"></img>
+              <img src="./src/assets/bg-dots.svg" alt="bg dots"></img>
             </div>
             <div className="browser-button-install">
               <button>Add & install Extension</button>

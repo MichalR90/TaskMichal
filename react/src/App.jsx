@@ -29,7 +29,7 @@ function HomePages() {
 }
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/TaskMichal/">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePages />} />

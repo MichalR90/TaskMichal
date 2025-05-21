@@ -31,7 +31,7 @@ function NavBar() {
             <div className="nav-bar-elements">
               <img
                 className={`navbar-logo ${isOpen ? "navbar-logo-active" : ""}`}
-                src="../src/assets/logo-bookmark.svg"
+                src="./src/assets/logo-bookmark.svg"
               ></img>
               <img
                 onClick={toggleClass}

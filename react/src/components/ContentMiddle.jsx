@@ -14,7 +14,7 @@ function ContentMiddle() {
         <div className="content-middle-img">
           <img
             onClick={handleResize}
-            src="../src/assets/illustration-features-tab-1.svg"
+            src="./src/assets/illustration-features-tab-1.svg"
             alt="feature"
             style={{ cursor: "pointer", maxWidth: "100%" }}
           />
@@ -54,7 +54,7 @@ function ContentMiddle() {
               </div>
               <div className="modal-body text-center">
                 <img
-                  src="../src/assets/illustration-features-tab-1.svg"
+                  src="./src/assets/illustration-features-tab-1.svg"
                   alt="preview"
                   style={{ maxWidth: "100%", height: "auto" }}
                 />
