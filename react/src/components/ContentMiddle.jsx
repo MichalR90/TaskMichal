@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ilustrationFeatures from "../assets/illustration-features-tab-1.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ContentMiddle() {
@@ -14,7 +15,7 @@ function ContentMiddle() {
         <div className="content-middle-img">
           <img
             onClick={handleResize}
-            src="./src/assets/illustration-features-tab-1.svg"
+            src={ilustrationFeatures}
             alt="feature"
             style={{ cursor: "pointer", maxWidth: "100%" }}
           />
@@ -54,7 +55,7 @@ function ContentMiddle() {
               </div>
               <div className="modal-body text-center">
                 <img
-                  src="./src/assets/illustration-features-tab-1.svg"
+                  src={ilustrationFeatures}
                   alt="preview"
                   style={{ maxWidth: "100%", height: "auto" }}
                 />

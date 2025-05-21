@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import illustrationHero from "../assets/illustration-hero.svg";
 
 function ContentTop() {
   const [show, setShow] = useState(false);
@@ -30,7 +31,7 @@ function ContentTop() {
         <div className="content-immages">
           <img
             onClick={handleShow}
-            src="./src/assets/illustration-hero.svg"
+            src={illustrationHero}
             className="content-immage"
           ></img>
         </div>
@@ -53,7 +54,7 @@ function ContentTop() {
               </div>
               <div className="modal-body text-center">
                 <img
-                  src="./src/assets/illustration-hero.svg"
+                  src={illustrationHero}
                   alt="preview"
                   style={{ maxWidth: "100%", height: "auto" }}
                 />

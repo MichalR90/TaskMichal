@@ -1,13 +1,13 @@
+import facebookIcon from "../assets/icon-facebook.svg";
+import twitIcon from "../assets/icon-twitter.svg";
+import bookmarkLogo from "../assets/logo-bookmark.svg";
 function BottomNavBar() {
   return (
     <>
       <div className="bottom-navBar">
         <ul>
           <li>
-            <img
-              className="img-bottom-navbar"
-              src="./src/assets/logo-bookmark.svg"
-            ></img>
+            <img className="img-bottom-navbar" src={bookmarkLogo}></img>
           </li>
           <li className="bottom-navbar-clicable-elements">
             <a>FEATURES</a>
@@ -20,8 +20,8 @@ function BottomNavBar() {
           </li>
         </ul>
         <div className="navbar-bottom-elements">
-          <img className="fb-twit" src="./src/assets/icon-facebook.svg"></img>
-          <img className="fb-twit" src="./src/assets/icon-twitter.svg"></img>
+          <img className="fb-twit" src={facebookIcon}></img>
+          <img className="fb-twit" src={twitIcon}></img>
         </div>
       </div>
     </>

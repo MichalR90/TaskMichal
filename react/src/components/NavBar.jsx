@@ -2,6 +2,7 @@ import { useState } from "react";
 import closeHamburgerButton from "../assets/icon-close.svg";
 import hamburgerButton from "../assets/icon-hamburger.svg";
 import { useNavigate } from "react-router-dom";
+import bookMark from "../assets/logo-bookmark.svg";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ function NavBar() {
             <div className="nav-bar-elements">
               <img
                 className={`navbar-logo ${isOpen ? "navbar-logo-active" : ""}`}
-                src="./src/assets/logo-bookmark.svg"
+                src={bookMark}
               ></img>
               <img
                 onClick={toggleClass}
