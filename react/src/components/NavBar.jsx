@@ -27,13 +27,11 @@ function NavBar() {
   return (
     <>
       <nav className="nav-bar">
+        <img className="navbar-logo" src={bookMark}></img>
         <ul className={`nav-bar-li ${isOpen ? "nav-bar-li-active" : ""}`}>
           <li>
             <div className="nav-bar-elements">
-              <img
-                className={`navbar-logo ${isOpen ? "navbar-logo-active" : ""}`}
-                src={bookMark}
-              ></img>
+              <img className="navbar-logo-active" src={bookMark}></img>
               <img
                 onClick={toggleClass}
                 className="nav-bar-hamburger-close"
@@ -52,7 +50,7 @@ function NavBar() {
             <a onClick={handleClickContacts}>CONTACTS</a>
           </li>
           <li className="nav-bar-clicable-elements">
-            <a onClick={handleClickLogin}>LOGIN</a>
+            <button onClick={handleClickLogin}>LOGIN</button>
           </li>
         </ul>
         {!isOpen && (
