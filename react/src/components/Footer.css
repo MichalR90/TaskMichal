@@ -1,0 +1,115 @@
+.footer {
+    font-family: var(--font-rubik);
+    width: var(--max-width);
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-top: 10rem;
+    background-color: var(--color-blue);
+
+}
+
+.footer-users-joined {
+    width: var(--body-font-size);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 3rem;
+}
+
+.footer-users-joined span {
+    font-weight: var(--font-weight-bolder);
+    font-size: var(--body-font-size);
+    color: rgb(255, 253, 253)
+}
+
+.footer-title {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.footer-title span {
+    font-weight: var(--font-weight-bolder);
+    font-size: var(--body-font-size);
+    text-align: center;
+    color: rgb(250, 248, 248)
+}
+
+.footer-form {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms-elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-form form {
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+}
+
+.footer-form-input {
+    width: 16rem;
+    height: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--body-font-size);
+    font-weight: var(--font-weight-bolder);
+    border: 2px solid rgb(232, 232, 232);
+}
+
+.footer-form-input-error {
+    border-color: var(--color-red);
+}
+
+.footer-contact-button {
+    width: 7rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.footer-contact-button:hover {
+    border: 2px solid var(--color-grey);
+    color: var(--color-grey)
+}
+
+.footer-contact-button-error {
+    color: var(--color-red);
+    border: 2px solid var(--color-red);
+}
+
+.footer-error-message {
+    background-color: var(--color-red);
+    color: white;
+    width: 16rem;
+    height: auto;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: var(--body-font-size);
+    text-align: center;
+    border: 2px solid var(--color-red)
+}
+
+.footer-inputs {
+    display: block;
+}

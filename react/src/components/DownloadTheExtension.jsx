@@ -2,8 +2,9 @@ import chromeIcon from "../assets/logo-chrome.svg";
 import fireFoxIcon from "../assets/logo-firefox.svg";
 import bgDots from "../assets/bg-dots.svg";
 import operaIcon from "../assets/logo-opera.svg";
+import "./DownloadTheExtension.css";
 
-function ContentDownload() {
+function DownloadTheExtension() {
   return (
     <>
       <div className="content-download">
@@ -77,4 +78,4 @@ function ContentDownload() {
     </>
   );
 }
-export default ContentDownload;
+export default DownloadTheExtension;

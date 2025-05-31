@@ -1,6 +1,7 @@
 import questionData from "../data/questions.json";
 import { QuestionItem } from "./Questions";
-const ComponentBottom = () => {
+import "./FrequentlyAskedQuestions.css";
+function FrequentlyAskedQuestions() {
   return (
     <>
       <div className="component-bottom">
@@ -30,6 +31,5 @@ const ComponentBottom = () => {
       </div>
     </>
   );
-};
-
-export default ComponentBottom;
+}
+export default FrequentlyAskedQuestions;

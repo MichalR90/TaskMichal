@@ -1,7 +1,8 @@
 import facebookIcon from "../assets/icon-facebook.svg";
 import twitIcon from "../assets/icon-twitter.svg";
 import bookmarkLogo from "../assets/logo-bookmark.svg";
-function BottomNavBar() {
+import "./NavBarBottom.css";
+function NavBarBoottom() {
   return (
     <>
       <div className="bottom-navBar">
@@ -27,4 +28,4 @@ function BottomNavBar() {
     </>
   );
 }
-export default BottomNavBar;
+export default NavBarBoottom;

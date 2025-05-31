@@ -1,0 +1,113 @@
+.component-bottom {
+    font-family: var(--font-rubik);
+    width: var(--max-width);
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-top: 10rem;
+}
+
+.component-bottom-title {
+    width: 50%;
+
+    height: auto;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.component-bottom-title span {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-weight-bolder);
+}
+
+.component-bottom-text {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.component-bottom-text span {
+    font-size: var(--body-font-size);
+    font-weight: var(--font-weight-bolder);
+    color: grey;
+}
+
+.component-bottom-questions-list {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+.component-bottom-questions-list ul li {
+    width: var(--max-width);
+    height: auto;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: var(--font-weight-bolder);
+    border-bottom: 2px solid rgb(182, 178, 178);
+}
+
+.component-bottom-questions-list ul li:hover {
+    color: var(--color-red);
+}
+
+.component-bottom-questions-list ul li span {
+    width: var(--max-width);
+    height: auto;
+}
+
+.component-bottom-answer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.component-bottom-question-answer {
+    color: grey;
+    font-size: var(--body-font-size);
+    font-weight: var(--font-weight-bolder);
+}
+
+.arrow {
+    width: 25px;
+    height: 15px;
+}
+
+.arrow-transform {
+    transform: rotate(180deg);
+    width: 25px;
+    height: 15px;
+}
+
+.component-bottom-button {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.component-bottom-button button {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+    height: 3rem;
+    align-items: center;
+    background-color: var(--color-blue);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.component-bottom-button button:hover {
+    background-color: white;
+    color: var(--color-blue);
+    border: 2px solid var(--color-blue);
+}

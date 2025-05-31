@@ -1,67 +1,47 @@
+import "./NavBar.css";
 import { useState } from "react";
-import closeHamburgerButton from "../assets/icon-close.svg";
+import logo from "../assets/logo-bookmark.svg";
 import hamburgerButton from "../assets/icon-hamburger.svg";
-import { useNavigate } from "react-router-dom";
-import bookMark from "../assets/logo-bookmark.svg";
+import hamburgerCloseButton from "../assets/icon-close.svg";
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleClass = () => {
-    setIsOpen(!isOpen);
-  };
-  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
 
-  const handleClickFeatures = () => {
-    navigate("/features");
-  };
-  const handleClickPricing = () => {
-    navigate("/pricing");
-  };
-  const handleClickContacts = () => {
-    navigate("/contacts");
-  };
-  const handleClickLogin = () => {
-    navigate("/login");
+  const handleShow = () => {
+    setShow(!show);
   };
 
   return (
     <>
-      <nav className="nav-bar">
-        <img className="navbar-logo" src={bookMark}></img>
-        <ul className={`nav-bar-li ${isOpen ? "nav-bar-li-active" : ""}`}>
-          <li>
-            <div className="nav-bar-elements">
-              <img className="navbar-logo-active" src={bookMark}></img>
-              <img
-                onClick={toggleClass}
-                className="nav-bar-hamburger-close"
-                src={closeHamburgerButton}
-                alt="close"
-              ></img>
-            </div>
-          </li>
-          <li className="nav-bar-clicable-elements">
-            <a onClick={handleClickFeatures}>FEATURES</a>
-          </li>
-          <li className="nav-bar-clicable-elements">
-            <a onClick={handleClickPricing}>PRICING</a>
-          </li>
-          <li className="nav-bar-clicable-elements">
-            <a onClick={handleClickContacts}>CONTACTS</a>
-          </li>
-          <li className="nav-bar-clicable-elements">
-            <button onClick={handleClickLogin}>LOGIN</button>
-          </li>
-        </ul>
-        {!isOpen && (
+      <div className={show ? "nav-bar-active" : "nav-bar"}>
+        <div className={show ? "nav-bar-elements-active" : "nav-bar-elements"}>
+          <img className="nav-bar-logo" src={logo} alt="logo"></img>
           <img
-            onClick={toggleClass}
-            className="nav-bar-hamburger-img"
-            src={hamburgerButton}
-            alt="menu"
+            className={
+              show ? "nav-bar-hamburger-close-button" : "nav-bar-hamburger-icon"
+            }
+            onClick={handleShow}
+            src={show ? hamburgerCloseButton : hamburgerButton}
+            alt="hamburger Button"
           ></img>
-        )}
-      </nav>
+        </div>
+        <div className={show ? "nav-bar-list-active" : "nav-bar-list"}>
+          <ul>
+            <li>
+              <a>FEATURES</a>
+            </li>
+            <li>
+              <a>PRICING</a>
+            </li>
+            <li>
+              <a>CONTACT</a>
+            </li>
+            <li className={show ? "nav-bar-login-active" : "nav-bar-login"}>
+              <a>LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </>
   );
 }

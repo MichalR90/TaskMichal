@@ -1,44 +1,34 @@
+import "./App.css";
 import NavBar from "./components/NavBar";
-import ContentTop from "./components/ContentTop";
+import BookMark from "./components/Bookmark";
 import Features from "./components/Features";
-import ContentMiddle from "./components/ContentMiddle";
-import ContentDownload from "./components/ContentDownload";
-import ComponentBottom from "./components/ComponentBottom";
+import DownloadTheExtension from "./components/DownloadTheExtension";
+import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import Footer from "./components/Footer";
-import BottomNavBar from "./components/BottomNavBar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FeaturesPage from "../src/pages/FeaturesPage";
-import ContactPage from "../src/pages/ContactPage";
-import LoginPage from "../src/pages/LoginPage";
-import PricingPage from "../src/pages/PricingPage";
+import NavBarBoottom from "./components/NavBarBottom";
 
-function HomePages() {
+function HomePage() {
   return (
     <>
-      <div className="main-website">
-        <ContentTop />
-        <Features />
-        <ContentMiddle />
-        <ContentDownload />
-        <ComponentBottom />
-        <Footer />
-        <BottomNavBar />
+      <div className="main">
+        <NavBar></NavBar>
+        <BookMark></BookMark>
+        <Features></Features>
+        <DownloadTheExtension></DownloadTheExtension>
+        <FrequentlyAskedQuestions></FrequentlyAskedQuestions>
+        <Footer></Footer>
+        <NavBarBoottom></NavBarBoottom>
       </div>
     </>
   );
 }
+
 function App() {
   return (
-    <BrowserRouter basename="/TaskMichal/">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePages />} />
-        <Route path="/features" element={<FeaturesPage />} />
-        <Route path="/contacts" element={<ContactPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/pricing" element={<PricingPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <HomePage></HomePage>
+    </>
   );
 }
+
 export default App;

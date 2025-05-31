@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Footer.css";
 import CheckEmail from "./CheckEmail";
 
 function Footer() {
